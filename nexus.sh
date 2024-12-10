@@ -15,6 +15,10 @@ sudo apt update
 sudo apt install -y protobuf-compiler
 sudo apt install -y libssl-dev
 sudo apt install -y pkg-config
+wget https://github.com/protocolbuffers/protobuf/releases/download/v21.4/protoc-21.4-linux-x86_64.zip
+unzip protoc-21.4-linux-x86_64.zip -d $HOME/protoc
+export PATH=$HOME/protoc/bin:$PATH
+protoc --version
 
 # 请求用户输入Prover ID并保存
 echo "请输入Prover ID："
