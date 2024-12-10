@@ -28,6 +28,4 @@ echo "$PROVER_ID" > ~/.nexus/prover-id
 
 # 安装Nexus CLI（后台运行）
 echo "正在安装Nexus CLI..."
-nohup curl https://cli.nexus.xyz/ | sh > nexus_install.log 2>&1 &
-
-echo "Nexus CLI 正在后台安装。您可以通过查看 nexus_install.log 文件检查安装进度。"
+nohup curl https://cli.nexus.xyz/ | sh 
